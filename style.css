@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    background-color: #000;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 40px;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.logo:hover {
+    opacity: 0.5;
+    
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 30px;
+    
+    
+}
+
+.nav li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size:  1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav li:hover a {
+    opacity: 0.5;
+    
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: #FFF;
+    font-size: 25px;
+  
+}
+      
+.search i:hover{
+    opacity: 0.5;
+}
+
+.banner {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(./lupin-fundo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.banner::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5s);
+}
+.contenêr {
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+
+}
+
+.contenêr.active {
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
+h1 {
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.banner .contenêr h1 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+p {
+    display: inline-block;
+    color: #FFF;
+    letter-spacing: 2px;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.banner .content .button{
+    position: relative;
+}
+.banner .content .button a{
+    position: relative;
+   display: inline-block;
+    margin-right: 10px;
+    left: 210px;
+    top: 20px;
+    background: red;
+    color: #FFF;
+    padding: 6px 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.banner .content .button a:nth-child(2){
+    background: rgba(0,0,0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner .content .button a:hover:nth-child(2){
+    background: red;
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    margin-right: 150px;
+    left: 3px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+       
+}
+
+.box{
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    padding: 0 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+.carousel-slide img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.carousel-slide img{
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 0 10px;
+}
+
+@font-face {
+    font-family: 'Nome';
+    src: url("./font/Helv\ Children.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'Nome';
+    color: #FFF;
+    font-size: 70px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+
+
+@font-face {
+    font-family: 'Netflix';
+    src: url("./font/BebasNeue.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    font-family: 'Netflix';
+    color: #e50914;
+    font-size: 2.8em;
+    cursor: pointer;
+    transform: translateZ(0);
+}
+
